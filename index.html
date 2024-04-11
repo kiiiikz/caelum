@@ -15,12 +15,12 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
-            class="search-input"
+            class="search-input" id="search-input"
           />
           <input type="submit" value="Search" class="search-submit" />
         </form>
@@ -28,7 +28,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-city">Cape Town</h1>
+            <h1 class="weather-city" id="weather-app-city">Cape Town</h1>
             <p class="weather-details">
               Wednesday 18:20 , scattered clouds
               <br />
@@ -49,5 +49,6 @@
         <a href="https://caelum-app.netlify.app/">Netlify.</a>
       </footer>
     </div>
+    <script src="src/index,js"></script>
   </body>
 </html>
