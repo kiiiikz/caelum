@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,7 +11,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>caelum</title>
   </head>
   <body>
@@ -29,7 +29,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-city" id="weather-app-city">Cape Town</h1>
+            <h1 class="weather-city" id="weather-app-city"></h1>
             <p class="weather-details">
               Wednesday 18:20 , scattered clouds
               <br />
@@ -38,7 +38,7 @@
           </div>
           <div class="weather-temp-container">
             <div class="weather-icon">🌦️</div>
-            <div class="weather-temperature">12</div>
+            <div class="weather-temperature" id="temperature"></div>
             <div class="weather-unit">°C</div>
         </div>
       </main>
@@ -50,6 +50,6 @@
         <a href="https://caelum-app.netlify.app/">Netlify.</a>
       </footer>
     </div>
-    <script src="src/index,js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
