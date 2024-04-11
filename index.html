@@ -15,21 +15,31 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-submit" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Cape Town</h1>
-          <p>
-            Wednesday 18:20 , scattered clouds
-            <br />
-            Humidity: 74% , Wind: 12km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-city">Cape Town</h1>
+            <p class="weather-details">
+              Wednesday 18:20 , scattered clouds
+              <br />
+              Humidity: <strong>74%</strong> , Wind: <strong>12km/h</strong>
+            </p>
+          </div>
+          <div class="weather-temp-container">
+            <div class="weather-icon">🌦️</div>
+            <div class="weather-temperature">12</div>
+            <div class="weather-unit">°C</div>
         </div>
-        <div>🌦️12°C</div>
       </main>
       <footer>
         This project was coded by
