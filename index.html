@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
     <title>caelum</title>
   </head>
   <body>
@@ -19,9 +19,10 @@
         <form class="search-form" id="search-form">
           <input
             type="search"
-            placeholder="Enter a city..."
+            placeholder="Enter a city.."
             required
-            class="search-input" id="search-input"
+            id="search-form-input"
+            class="search-input"
           />
           <input type="submit" value="Search" class="search-submit" />
         </form>
@@ -29,17 +30,20 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-city" id="weather-app-city"></h1>
+            <h1 class="weather-city" id="city"></h1>
             <p class="weather-details">
-              Wednesday 18:20 , scattered clouds
+              <span id="time"></span>,
+              <span id="description"></span>
               <br />
-              Humidity: <strong>74%</strong> , Wind: <strong>12km/h</strong>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-temp-container">
-            <div class="weather-icon">🌦️</div>
+            <div id="icon"></div>
             <div class="weather-temperature" id="temperature"></div>
             <div class="weather-unit">°C</div>
+          </div>
         </div>
       </main>
       <footer>
